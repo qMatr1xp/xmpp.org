@@ -65,7 +65,7 @@
             ]
         },
         {
-            "name": "Adrien Bourmault ",
+            "name": "Adrien Bourmault",
             "jids": [
                 "neox@a-lec.org"
             ]
@@ -267,6 +267,9 @@
             "jids": [
                 "ralphm@ik.nu"
             ],
+            "email": [
+                "ralphm@ik.nu"
+            ],
             "roles": [
                 "chair",
                 "board"
@@ -415,6 +418,9 @@
             "jids": [
                 "arne-bruen@monocles.de"
             ],
+            "email": [
+                "arne-bruen@monocles.de"
+            ],
             "roles": [
                 "board"
             ]
@@ -476,7 +482,7 @@
             ]
         }
     ],
-    "emeriti": [
+    "emeritus": [
         {
             "name": "Ryan Eatmon"
         },
