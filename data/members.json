@@ -93,6 +93,7 @@
         },
         {
             "name": "Dan Caseley",
+            "introduction": "**Dan Caseley** is a regular contributor to the [Openfire](https://www.igniterealtime.org/projects/openfire/) project, and an author and contributor in Openfire's plugin ecosystem. Initially involved in XMPP implementations at work, Dan is now a contributor in both his professional and personal life as part of the OSS community.",
             "jids": [
                 "dan.caseley@igniterealtime.org"
             ],
@@ -151,6 +152,7 @@
         },
         {
             "name": "Stephen Paul Weber",
+            "introduction": "**Stephen Paul Weber** is one of the maintainers at the [Sopranica Project](https://soprani.ca) which includes the [Cheogram Services and Client](https://cheogram.com) and also [JMP](https://jmp.chat). Feel free to contact him via [his Jabber ID](xmpp:singpolyma@singpolyma.net).",
             "jids": [
                 "singpolyma@singpolyma.net"
             ],
@@ -162,6 +164,7 @@
         },
         {
             "name": "Guus der Kinderen",
+            "introduction": "**Guus der Kinderen** is an independent consultant and founder of GoodBytes, specializing in XMPP-based messaging systems and real-time communication solutions. He has been active in the XMPP community since the early 2000s and contributes to multiple projects, including the [Openfire](https://www.igniterealtime.org/projects/openfire/) server and the [XMPP Interop Testing framework](https://xmpp-interop-testing.github.io/). His interests include open standards, protocol development, and fostering a sustainable and thriving XMPP ecosystem.",
             "jids": [
                 "guus.der.kinderen@igniterealtime.org"
             ],
@@ -195,6 +198,7 @@
         },
         {
             "name": "Daniel Gultsch",
+            "introduction": "**Daniel Gultsch** is the maintainer of the Android client [Conversations](https://conversations.im) and operates an [XMPP domain hosting service](https://account.conversations.im/domain). He has also (co-) created several XEPs. Contact information can be found on [his website](https://gultsch.de).",
             "jids": [
                 "daniel@gultsch.de"
             ],
@@ -264,6 +268,7 @@
         },
         {
             "name": "Ralph Meijer",
+            "introduction": "**Ralph Meijer** is an independent consultant for Nuntians Services B.V., working on real-time communications systems, event-driven architectures, and observability. He is the lead developer of several XMPP related projects and services, including Wokkel and the XMPP support in Twisted, the Idavoll pubsub component, and Planet Jabber. Ralph has been member of the XMPP Council from 2004 to 2013 and Director since 2013.",
             "jids": [
                 "ralphm@ik.nu"
             ],
@@ -315,6 +320,7 @@
         },
         {
             "name": "Jérôme Poisson",
+            "introduction": "**Jérôme Poisson** is the maintainer of the [Libervia](https://libervia.org/) client, including several components and notably an ActivityPub ⟺ XMPP gateway, and the Libervia Pubsub component (an advanced PEP/Pubsub service). He is also the author of several XEPs and a strong advocate for non-IM use cases, particularly those based on pubsub.",
             "jids": [
                 "goffi@jabber.fr"
             ],
@@ -330,6 +336,7 @@
         },
         {
             "name": "Mickaël Rémond",
+            "introduction": "**Mickaël Rémond** is a long-time open-source contributor and a key figure in the XMPP ecosystem. He is the founder and CEO of [ProcessOne](https://www.process-one.net/) and a principal architect of ejabberd, one of the most widely deployed open-source XMPP servers. Involved with XMPP since 2000, he has served for many years on the Board of Directors of the XMPP Standards Foundation (XSF), where he helps guide the development of open, interoperable real-time communication standards.",
             "jids": [
                 "mremond@process-one.net"
             ],
@@ -372,6 +379,7 @@
         },
         {
             "name": "Florian Schmaus",
+            "introduction": "**Florian Schmaus** is a software developer and long-standing contributor to the XMPP community. He is leading the development of Smack, an XMPP client library targeting Android and Java. His interests include operating systems, parallel runtime systems, and systems software in general. Fittingly, Florian also conducts research in this area and helps students unravel the black box inside modern computing systems. Besides that, he enjoys spending time with his family.",
             "jids": [
                 "flo@geekplace.eu"
             ],
@@ -415,6 +423,7 @@
         },
         {
             "name": "Arne-Bruen Vogelsang",
+            "introduction": "**Arne-Bruen Vogelsang** is the founder and lead developer of [monocles](https://monocles.eu/more/). Whereas he is maintaining two public XMPP servers and [monocles chat]( https://f-droid.org/packages/de.monocles.chat/) is a known XMPP chat client for Android, he's also working on other non-XMPP related open source projects. During his studies he learned a lot about the need for more ethical and fair digital and technological solutions. He also experienced the business side for founding a sustainable company providing open source solutions. He advocates and supports XMPP and open source since many years and is an official XSF member since 2023.",
             "jids": [
                 "arne-bruen@monocles.de"
             ],
@@ -451,6 +460,7 @@
         },
         {
             "name": "Marvin Wissfeld",
+            "introduction": "**Marvin Wissfeld** is one of the maintainers of the XMPP client [Dino](https://dino.im/). He has contributed to several XEPs and various free software projects related to XMPP.",
             "jids": [
                 "jabber@larma.de"
             ],

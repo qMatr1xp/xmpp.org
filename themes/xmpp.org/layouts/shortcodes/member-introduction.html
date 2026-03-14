@@ -1,0 +1,21 @@
+{{- $member := .Get "member" -}}
+
+{{- $members := .Site.Data.members.members -}}
+{{- $member_data := index (where $members "name" $member) 0 -}}
+
+<p>
+  {{- $member_data.introduction | markdownify -}}
+  <br>
+  <p>Contact {{ $member }}:
+  {{- with $member_data.email -}}
+    <a href="mailto:{{- index . 0 -}}" title="Contact {{ $member }} via email">
+      <i class="fa-regular fa-envelope"></i>
+    </a>
+  {{- end -}}
+    {{- with $member_data.jids -}}
+    <a href="xmpp:{{- index . 0 -}}" title="Contact {{ $member }} via XMPP">
+      <i class="fa-regular fa-comment-dots"></i>
+    </a>
+  {{- end -}}
+  </p>
+</p>

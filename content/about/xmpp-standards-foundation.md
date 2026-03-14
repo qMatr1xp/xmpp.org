@@ -21,13 +21,11 @@ At the core of the XSF is its elected Membership who, in turn, elect a [Council]
 
 The Board of Directors of the XMPP Standards Foundation oversees the business affairs of the organisation. As elected by the XSF membership, the Board of Directors consists of the following individuals:
 
-- __Guus der Kinderen__ is an independent consultant and founder of GoodBytes, specializing in XMPP-based messaging systems and real-time communication solutions. He has been active in the XMPP community since the early 2000s and contributes to multiple projects, including the [Openfire](https://www.igniterealtime.org/projects/openfire/) server and the [XMPP Interop Testing framework](https://xmpp-interop-testing.github.io/). His interests include open standards, protocol development, and fostering a sustainable and thriving XMPP ecosystem.
-- __Ralph Meijer__ is an independent consultant for Nuntians Services B.V., working on real-time communications systems, event-driven architectures, and observability. He is the lead developer of several XMPP related projects and services, including Wokkel and the XMPP support in Twisted, the Idavoll pubsub component, and Planet Jabber. Ralph has been member of the XMPP Council from 2004 to 2013 and Director since 2013.
-- __Mickaël Rémond__ s a long-time open-source contributor and a key figure in the XMPP ecosystem. He is the founder and CEO of [ProcessOne](https://www.process-one.net/) and a principal architect of ejabberd, one of the most widely deployed open-source XMPP servers. Involved with XMPP since 2000, he has served for many years on the Board of Directors of the XMPP Standards Foundation (XSF), where he helps guide the development of open, interoperable real-time communication standards.
-- __Florian Schmaus__ is a software developer and long-standing contributor to the XMPP community. He is leading the development of Smack, an XMPP client library targeting Android and Java. His interests include operating systems, parallel runtime systems, and systems software in general. Fittingly, Florian also conducts research in this area and helps students unravel the black box inside modern computing systems. Besides that, he enjoys spending time with his family.
-- __Arne-Bruen Vogelsang__ is the founder and lead developer of [monocles](https://monocles.eu/more/). Whereas he is maintaining two public XMPP servers and [monocles chat]( https://f-droid.org/packages/de.monocles.chat/) is a known XMPP chat client for Android, he's also working on other non-XMPP related open source projects.
-During his studies he learned a lot about the need for more ethical and fair digital and technological solutions. He also experienced the business side for founding a sustainable company providing open source solutions.
-He advocates and supports XMPP and open source since many years and is an official XSF member since 2023.
+- {{< member-introduction member="Guus der Kinderen" >}}
+- {{< member-introduction member="Ralph Meijer" >}}
+- {{< member-introduction member="Mickaël Rémond" >}}
+- {{< member-introduction member="Florian Schmaus" >}}
+- {{< member-introduction member="Arne-Bruen Vogelsang" >}}
 
 ## The Council{#council}
 
@@ -37,8 +35,8 @@ The Council is elected by the members of the XMPP Standards Foundation. In the i
 
 The Council consists of the following individuals:
 
-- __Dan Caseley__ is a regular contributor to the [Openfire](https://www.igniterealtime.org/projects/openfire/) project, and an author and contributor in Openfire's plugin ecosystem. Initially involved in XMPP implementations at work, Dan is now a contributor in both his professional and personal life as part of the OSS community.
-- __Daniel Gultsch__ is the maintainer of the Android client [Conversations](https://conversations.im) and operates an [XMPP domain hosting service](https://account.conversations.im/domain). He has also (co-) created several XEPs. Contact information can be found on [his website](https://gultsch.de).
-- __Marvin Wissfeld__  is one of the maintainers of the XMPP client [Dino](https://dino.im/). He has contributed to several XEPs and various free software projects related to XMPP.
-- __Stephen Paul Weber__ is one of the maintainers at the [Sopranica Project](https://soprani.ca) which includes the [Cheogram Services and Client](https://cheogram.com) and also [JMP](https://jmp.chat). Feel free to contact him via [his Jabber ID](xmpp:singpolyma@singpolyma.net).
-- __Jérôme Poisson__ is the maintainer of the [Libervia](https://libervia.org/) client, including several components and notably an ActivityPub ⟺ XMPP gateway, and the Libervia Pubsub component (an advanced PEP/Pubsub service). He is also the author of several XEPs and a strong advocate for non-IM use cases, particularly those based on pubsub.
+- {{< member-introduction member="Dan Caseley" >}}
+- {{< member-introduction member="Daniel Gultsch" >}}
+- {{< member-introduction member="Marvin Wissfeld" >}}
+- {{< member-introduction member="Stephen Paul Weber" >}}
+- {{< member-introduction member="Jérôme Poisson" >}}
