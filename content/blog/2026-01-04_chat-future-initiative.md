@@ -58,7 +58,7 @@ There are multiple sessions and more planned, so one can join at another time or
 Currently a first set of sessions is planned and listed below with more sessions to work on actual topics to come.
 This can be matter of change based on feedback.
 
-The session link can be found here: [BigBlueBotton](https://lecture.senfcall.de/xsf-pp5-pim-gjg).
+The session link can be found here: [Teamjoin](https://talk.teamjoin.de/room/8a1e5d06-4d31-4283-a73a-2c7a0d3755d3?invite=76e96732-ec54-480c-877b-9ffd8a987aa1).
 Access code: 932872
 
 The password code and the pad will posted on the day in the XSF Chat (see below).
@@ -70,10 +70,10 @@ Meeting netiquette: Please keep a respectful, constructive and positive tone and
 | Kick-off Session | Tue, 13 Jan 2026     |  19:00 - 20:00 (CET)    |   About the Initiative, Check-in & Warm-up, Retrospective on XMPP today   |
 | Q1 Focus Session  | Tue, 20 Jan 2026     |  19:00 - 20:00 (CET)  |  Check-in & Warm-up, Focus topic from previous session |
 | Q1 Activities Discussion Session  | Tue, 3 Feb 2026     |  19:00 - 19:45 (CET)  |  Activities March - May 2026   |
-| Q1 Check-in Session  | Tue, 11 + 25 Mar 2026     |  19:00 - 19:30 (CET)  |  Review of activities   |
-| Q1 Check-in Session  | Tue, 8 + 22 Apr 2026     |  19:00 - 19:30 (CET)  |  Review of activities    |
-| Q2 Planning Session  | Tue, 7 May 2026     |  19:00 - 20:00 (CET)  |  TBA  |
-| Q2 Check-in Session  | Tue, 6 & 20 May 2026     |  19:00 - 19:30 (CET)  | Review of activities    |
+| Q1 Check-in Session  | Tue, 17 + 31 Mar 2026     |  19:00 - 19:30 (CET)  |  Review of activities   |
+| Q1 Check-in Session  | Tue, 14 + 28 Apr 2026     |  19:00 - 19:30 (CET)  |  Review of activities    |
+| Q2 Planning Session  | Tue, 5 May 2026     |  19:00 - 20:00 (CET)  |  TBA  |
+| Q2 Check-in Session  | Tue, 19 May 2026 + TBA    |  19:00 - 19:30 (CET)  | Review of activities    |
 
 If you have further questions, please join the [XSF chat](https://xmpp.org/community/chat/).
 
