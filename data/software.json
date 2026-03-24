@@ -585,7 +585,7 @@
     },
     {
         "categories": [
-            "library"
+            "tool"
         ],
         "doap": null,
         "name": "go-sendxmpp",
@@ -1361,7 +1361,7 @@
     },
     {
         "categories": [
-            "library"
+            "tool"
         ],
         "doap": "https://raw.githubusercontent.com/lhost/sendxmpp/master/data/sendxmpp.doap",
         "name": "sendxmpp",
