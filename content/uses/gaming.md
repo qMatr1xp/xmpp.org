@@ -13,7 +13,7 @@ There is a growing number of games adopting XMPP for real-time signaling, push n
 
 | Users         | Game / Community                | Description                            | Since |
 |---------------|---------------------------------|----------------------------------------|-------|
-|  ~128 million | [Nintendo Switch](https://www.nintendo.com/switch/) | The Nintendo Switch video game console [uses the Ejabberd XMPP server for push notifications](https://blog.process-one.net/ejabberd-nintendo-switch-npns/). | 2019 |
+|  ~128 million | [Nintendo Switch](https://www.nintendo.com/switch/) | The Nintendo Switch video game console [uses the Ejabberd XMPP server for push notifications](https://www.process-one.net/blog/ejabberd-nintendo-switch-npns/). | 2019 |
 |  ~131 million | [League of Legends](https://leagueoflegends.com) | One of the largest online video games [using XMPP](http://highscalability.com/blog/2014/10/13/how-league-of-legends-scaled-chat-to-70-million-players-it-t.html) for chat and game invitations. | 2009 |
 |  ~1 million   | [EVE Online](https://www.eveonline.com/) | EVE Online has [switched to XMPP for the in-game chat backend](https://www.eveonline.com/article/p4i0qx/new-chat-backend-coming-with-the-march-release) | 2018 |
 |  ~500 million | [Fortnite](https://www.epicgames.com/fortnite/) | A cooperative survival game [using XMPP](https://www.epicgames.com/fortnite/en-US/news/postmortem-of-service-outage-at-3-4m-ccu) for presence, push, whispers and group chat | 2017 |
