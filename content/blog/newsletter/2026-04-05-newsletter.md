@@ -128,7 +128,7 @@ If an experimental XEP is not updated for more than twelve months, it will be mo
 Last calls are issued once everyone seems satisfied with the current XEP status. After the [Council](/about/xmpp-standards-foundation/#council) decides whether the XEP seems ready, the [XMPP Editor](/about/xsf/editor-team/) issues a Last Call for comments. The feedback gathered during the Last Call can help improve the XEP before returning it to the Council for advancement to Stable.
 
 - [Last Call](https://mail.jabber.org/hyperkitty/list/standards@xmpp.org/thread/4IF5UK2HVQDRUEV4LINWHUQFBRE2C63U/) for comments on [XEP-0377](/extensions/xep-0377.html) (Blocking Command Reports)
-  - This Last Call begins on 2026-03-31 and shall end at the close of business on 2026-01-05.
+  - This Last Call begins on 2026-03-31 and shall end at the close of business on 2026-04-14.
 
 ### Stable
 
