@@ -4,17 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
   if (window.location.pathname == "/software/") {
     for (const button of document.querySelectorAll('button[name="category-button"]')) {
       button.addEventListener("click", () => {
-        url_params.set("category", button.dataset.category);
-        history.pushState(null, "", `${window.location.pathname}?${url_params.toString()}`);
-
-        software_filter_list()
+        software_filter_list();
       });
     }
-
-    // Select category tab by URL param (or default to Clients tab)
-    const url_params_category = url_params.get("category") ?? "clients"
-    document.getElementById(`category-button-${url_params_category}`)?.click()
-
 
     for (const check of document.getElementById("select-options-list").querySelectorAll('input[id^="xep-"')) {
       check.addEventListener("click", software_filter_list);
@@ -25,14 +17,13 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("compliance-web").addEventListener("change", software_filter_list);
     document.getElementById("compliance-av").addEventListener("change", software_filter_list);
 
-    document.getElementById("platform-select").addEventListener("change", software_platform_changed);
+    document.getElementById("platform-select").addEventListener("change", software_filter_list);
     document.getElementById("xep-select").addEventListener("click", software_show_xep_select_dropdown);
     document.getElementById("xep-select-dropdown-container").addEventListener("focusout", software_hide_xep_select_dropdown);
     document.getElementById("xep-search").addEventListener("keyup", software_search_xeps);
     document.getElementById("reset-xep-filter").addEventListener("click", software_reset_xep_filter);
 
     software_set_filters();
-    software_filter_list();
   }
 
   if (window.location.pathname == "/software/software-comparison/") {
@@ -294,19 +285,12 @@ function software_hide_xep_select_dropdown(event) {
   }
 }
 
-function software_platform_changed(event) {
-  url_params.set("platform", event.target.value);
-  history.pushState(null, "", `${window.location.pathname}?${url_params.toString()}`);
-
-  software_filter_list()
-}
-
 function software_set_filters() {
   // Software list: Set filters for displaying software
 
   // Select platform by query parameter or via reported user agent
   let user_platform = "";
-  if(window.location.search) {
+  if (window.location.search) {
     user_platform = url_params.get("platform")
   }
 
@@ -314,11 +298,58 @@ function software_set_filters() {
   if (platform_select) {
     for (const option of platform_select) {
       if (option.value == user_platform) {
-        option.setAttribute("selected", true);
-        return;
+        option.selected = true;
+        break;
       }
     }
   }
+
+  let showAdvancedFilters = false;
+
+  const url_params_cscore = url_params.get("cscore");
+  if (url_params_cscore) {
+    showAdvancedFilters = true;
+    document.getElementById("compliance-core").value = url_params_cscore;
+  }
+  const url_params_csim = url_params.get("csim");
+  if (url_params_csim) {
+    showAdvancedFilters = true;
+    document.getElementById("compliance-im").value = url_params_csim;
+  }
+  const url_params_csmobile = url_params.get("csmobile");
+  if (url_params_csmobile) {
+    showAdvancedFilters = true;
+    document.getElementById("compliance-mobile").value = url_params_csmobile;
+  }
+  const url_params_csweb = url_params.get("csweb");
+  if (url_params_csweb) {
+    showAdvancedFilters = true;
+    document.getElementById("compliance-web").value = url_params_csweb;
+  }
+  const url_params_csav = url_params.get("csav");
+  if (url_params_csav) {
+    showAdvancedFilters = true;
+    document.getElementById("compliance-av").value = url_params_csav;
+  }
+
+  const url_params_xeps = url_params.get("xeps") ?? [];
+  if (url_params_xeps.length > 0) {
+    showAdvancedFilters = true;
+    for (const check of document.getElementById("select-options-list").querySelectorAll('input[id^="xep-"')) {
+      if (url_params_xeps.includes(check.dataset.xep)) {
+        check.checked = true;
+      }
+    }
+  }
+
+  if (showAdvancedFilters) {
+    // Show advanced filter collapse
+    document.getElementById("advanced-filters-collapse-button").click();
+  }
+
+  // Select category tab by URL param (or default to Clients tab)
+  const url_params_category = url_params.get("category") ?? "clients";
+  document.getElementById(`category-button-${url_params_category}`)?.click();
 }
 
 function software_get_selected_category() {
@@ -399,9 +430,7 @@ function software_is_package_compliant(card) {
 
 function software_filter_list() {
   let category = software_get_selected_category();
-  if (category == null) {
-    return;
-  }
+  url_params.set("category", category);
 
   if (category == "libraries") {
     category = "library";
@@ -409,8 +438,50 @@ function software_filter_list() {
     category = category.slice(0, -1);
   }
 
-  const selected_xeps = software_get_selected_xeps();
   const platform = document.getElementById("platform-select").value.toLowerCase();
+  if (platform === "all-platforms") {
+    url_params.delete("platform");
+  } else {
+    url_params.set("platform", platform);
+  }
+
+  const complianceCore = document.getElementById("compliance-core").value;
+  if (complianceCore === "-") {
+    url_params.delete("cscore");
+  } else {
+    url_params.set("cscore", complianceCore);
+  }
+  const complianceIm = document.getElementById("compliance-im").value;
+  if (complianceIm === "-") {
+    url_params.delete("csim");
+  } else {
+    url_params.set("csim", complianceIm);
+  }
+  const complianceMobile = document.getElementById("compliance-mobile").value
+  if (complianceMobile === "-") {
+    url_params.delete("csmobile")
+  } else {
+    url_params.set("csmobile", complianceMobile)
+  }
+  const complianceWeb = document.getElementById("compliance-web").value;
+  if (complianceWeb === "-") {
+    url_params.delete("csweb");
+  } else {
+    url_params.set("csweb", complianceWeb);
+  }
+  const complianceAv = document.getElementById("compliance-av").value;
+  if (complianceAv === "-") {
+    url_params.delete("csav");
+  } else {
+    url_params.set("csav", complianceAv);
+  }
+
+  const selected_xeps = software_get_selected_xeps();
+  if (selected_xeps.length > 0) {
+    url_params.set("xeps", selected_xeps);
+  } else {
+    url_params.delete("xeps");
+  }
 
   let hidden_cards = 0;
   for (const card of document.getElementsByClassName("package-card")) {
@@ -449,6 +520,8 @@ function software_filter_list() {
       info_text.innerHTML = `Your filter settings omit ${hidden_cards} of ${document.getElementsByClassName("package-card").length} entries.`;
     }
   }
+
+  history.pushState(null, "", `${window.location.pathname}?${url_params.toString()}`);
 }
 
 // Page: /software/software-comparison/

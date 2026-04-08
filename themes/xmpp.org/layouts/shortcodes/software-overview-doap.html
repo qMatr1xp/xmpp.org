@@ -19,7 +19,7 @@
                         </div>
                     </div>
                     <p>
-                        <button class="btn btn-outline-secondary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#advanced-filters-collapse" aria-expanded="false" aria-controls="advanced-filters-collapse">
+                        <button id="advanced-filters-collapse-button" class="btn btn-outline-secondary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#advanced-filters-collapse" aria-expanded="false" aria-controls="advanced-filters-collapse">
                             More Filters&nbsp;&nbsp;<i class="fa-solid fa-chevron-down"></i>
                         </button>
                     </p>
@@ -81,6 +81,10 @@
                                     <div class="select-options-wrapper me-2">
                                         <div class="select-options-list" id="select-options-list">
                                             {{- range .Site.Data.xeplist -}}
+                                                {{ if or (eq .type "Humorous") (eq .type "Procedural") }}
+                                                    {{ continue }}
+                                                {{ end }}
+
                                                 {{- $full_number := "" -}}
                                                 {{- if eq (len (string .number)) 1 -}}
                                                     {{- $full_number = print "000" .number -}}
@@ -261,19 +265,19 @@
                                     <td>
                                         <div>
                                         {{- if eq . "core" -}}
-                                            <i class="fa-solid fa-fw fa-circle-check"></i>
+                                            <i class="fa-solid fa-circle-check"></i>
                                             <span class="px-2">Core Compliance</span>
                                         {{- else if eq . "im" -}}
-                                            <i class="fa-solid fa-fw fa-comments"></i>
+                                            <i class="fa-solid fa-comments"></i>
                                             <span class="px-2">Instant Messaging</span>
                                         {{- else if eq . "mobile" -}}
-                                            <i class="fa-solid fa-fw fa-mobile-screen"></i>
+                                            <i class="fa-solid fa-mobile-screen"></i>
                                             <span class="px-2">Mobile</span>
                                         {{- else if eq . "web" -}}
-                                            <i class="fa-regular fa-fw fa-window-restore"></i>
+                                            <i class="fa-solid fa-up-right-from-square"></i>
                                             <span class="px-2">Web</span>
                                         {{- else if eq . "av" -}}
-                                            <i class="fa-solid fa-fw fa-phone"></i>
+                                            <i class="fa-solid fa-phone"></i>
                                             <span class="px-2">Audio/Video Calling</span>
                                         {{- end -}}
                                         </div>
