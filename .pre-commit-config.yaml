@@ -3,12 +3,12 @@ default_language_version:
 
 repos:
   - repo: https://github.com/pycqa/isort
-    rev: 7.0.0
+    rev: 8.0.1
     hooks:
       - id: isort
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.15.0
+    rev: v0.15.9
     hooks:
       - id: ruff-check
       - id: ruff-format
