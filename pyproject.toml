@@ -18,26 +18,10 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-  "isort==8.0.1",
   "pre-commit==4.5.1",
   "pyright==1.1.408",
   "ruff==0.15.9",
 ]
-
-[tool.isort]
-force_alphabetical_sort_within_sections = true
-force_single_line = true
-group_by_package = true
-known_typing = ["typing"]
-sections = [
-  "FUTURE",
-  "TYPING",
-  "STDLIB",
-  "THIRDPARTY",
-  "FIRSTPARTY",
-  "LOCALFOLDER"
-]
-skip_gitignore = true
 
 [tool.ruff]
 target-version = "py314"
@@ -53,7 +37,6 @@ ignore = [
   "EXE002",   # no shebang
   "FBT001",   # Boolean-typed positional argument in function definition
   "FBT002",   # Boolean default positional argument in function definition
-  "I",        # imports, covered by isort
   "INP001",   # File `xx` is part of an implicit namespace package. Add an `__init__.py`.
   "PLR0912",  # Too many branches
   "PLR0915",  # Too many statements
@@ -68,3 +51,19 @@ ignore = [
 inline-quotes = "double"
 docstring-quotes = "double"
 multiline-quotes = "double"
+
+[tool.ruff.lint.isort]
+case-sensitive = false
+order-by-type = false
+force-single-line = true
+section-order = [
+  "future",
+  "typing",
+  "standard-library",
+  "third-party",
+  "first-party",
+  "local-folder"
+]
+
+[tool.ruff.lint.isort.sections]
+typing = ["_typeshed", "typing", "typing_extensions"]
